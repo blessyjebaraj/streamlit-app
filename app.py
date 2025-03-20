@@ -41,26 +41,25 @@ st.write("""
 """)
 
 # Project 1: Stock Portfolio App
-st.subheader("Stock Portfolio Tracker")
+st.subheader("Stock Portfolio Tracker (WIP)")
 st.write("I built an interactive app that allows users to track their stock portfolio with real-time data and visualize portfolio growth.")
 st.markdown("[View Project](https://github.com/blessysprofile/stock-portfolio-app)")
 
 # Project 2: Tableau Dashboard Embedding
-st.subheader("Tableau Dashboard on Portfolio Performance")
-st.write("A dynamic Tableau dashboard for monitoring portfolio performance over time.")
+st.subheader("Tableau Dashboard")
+st.write("A dynamic Tableau dashboard for analysing Customer Churn")
 st.markdown("[View Dashboard](https://public.tableau.com/app/profile/blessy.jebaraj123/viz/Blessy_Jebaraj_Dashboard/CHURNANALYSISSTRY)")
 
 # Add Snipping Tool Video (Local file)
-st.subheader("Watch the Snipping Tool Demo")
+st.subheader("Watch the Demo of HR Analytics")
 st.video("tableau.mp4")
 
 # Contact Page (Placeholder for now)
 st.header("Contact Me")
 st.write("Feel free to reach out via email at blessy.jebaraj@gmail.com.")
 
-
 # Contact Form - Message for Users to Drop a Message
-st.header("Drop Me a Message!")
+st.header("And I'd love to hear your thoughts")
 
 # EmailJS Integration (Updated to send a user message)
 def send_email(name, email, message):
