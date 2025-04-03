@@ -140,8 +140,8 @@ if st.session_state.page == "ABOUT":
         st.write(""" 
         I’m an **Analytics Engineer** with expertise in building data pipelines, 
         creating insightful dashboards, and implementing data-driven solutions. 
-        I have experience working with various tools like **Tableau**, **Python**, 
-        **SQL**, **dbt**, **Airflow**, **Looker**, and **Cloud Technologies**. 
+        I have experience working with various tools like **Tableau**, **Power BI**,
+        **SQL**, **Python**, **dbt**, **Airflow**, **Looker**, and **Cloud Technologies**. 
         Explore my work and get in touch!
         """)
 
@@ -153,7 +153,7 @@ elif st.session_state.page == "PORTFOLIO":
     st.markdown('<h2 class="header">Skills</h2>', unsafe_allow_html=True)
     st.write(""" 
     - Data Engineering
-    - Business Intelligence (BI) Tools (Tableau, Looker)
+    - Business Intelligence (BI) Tools (Tableau, Power BI, Looker)
     - Python Programming
     - Data Modeling and ETL/ELT
     - SQL & NoSQL Databases
