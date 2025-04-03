@@ -108,8 +108,7 @@ st.markdown("""
 
 st.markdown('<h1 class="main-title">BLESSY JEBARAJ</h1>', unsafe_allow_html=True)
 
-# Buttons for page navigation with custom styling
-col1, col2, col3 = st.columns([1, 2, 1])  # You can adjust the column layout for better spacing
+col1, col2, col3, col4 = st.columns([1, 2, 1, 1])
 with col1:
     if st.button("ABOUT", key="about_button", use_container_width=True):
         st.session_state.page = "ABOUT"
@@ -119,6 +118,15 @@ with col2:
 with col3:
     if st.button("CONTACT", key="contact_button", use_container_width=True):
         st.session_state.page = "CONTACT"
+with col4:
+    with open("Blessy_Jebaraj_CV.pdf", "rb") as file:
+        st.download_button(
+            label="DOWNLOAD CV",
+            data=file,
+            file_name="Blessy_Jebaraj_CV.pdf",
+            mime="application/pdf",
+            use_container_width=True
+        )
 
 # Page content with improved styling
 if st.session_state.page == "ABOUT":
@@ -130,7 +138,7 @@ if st.session_state.page == "ABOUT":
     with col1:
         st.markdown('<h2 class="header">Hello!</h2>', unsafe_allow_html=True)
         st.write(""" 
-        I’m a **Analytics Engineer** with expertise in building data pipelines, 
+        I’m an **Analytics Engineer** with expertise in building data pipelines, 
         creating insightful dashboards, and implementing data-driven solutions. 
         I have experience working with various tools like **Tableau**, **Python**, 
         **SQL**, **dbt**, **Airflow**, **Looker**, and **Cloud Technologies**. 
